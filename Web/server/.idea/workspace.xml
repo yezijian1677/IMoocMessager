@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dbd1eb2f-d2ae-44bd-9777-92eb0c33e934" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/color/text_nav.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/drawable-xxxhdpi/bg_src_morning.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/drawable-xxxhdpi/bg_src_tianjin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/drawable-xxxhdpi/bg_src_woman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/drawable-xxxhdpi/default_banner_chat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/drawable-xxxhdpi/default_banner_group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/drawable-xxxhdpi/default_banner_personal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/drawable-xxxhdpi/default_portrait.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/drawable-xxxhdpi/ic_launch_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/values-v21/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/color/cb_gallery.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/color/cb_group_contact.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable-v21/bg_main_recycler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable-v21/cell_chat_fg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable-v21/cell_group_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable-v21/cell_group_fg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable-v21/ic_touch_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable-v21/ic_touch_fg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable-v21/ic_touch_fg_white.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable-v21/ic_touch_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/bg_account_input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/bg_gradient_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/bg_main_recycler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/cell_chat_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/cell_chat_fg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/cell_group_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/cell_group_fg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/default_face.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/default_holder_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_back.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_backspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_chat_bubble.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_check_circle_selected.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_check_circle_unselected.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_contact.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_contact_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_cursor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_cursor_white.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_direction_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_done.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_emoji.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_favorite_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_g_translate_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_group.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_group_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_key.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_menu_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_more.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_person.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_phone.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_record.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_send.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_sex_man.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_sex_woman.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_submit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_touch_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_touch_fg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_touch_fg_white.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/ic_touch_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/sel_bg_clr_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/sel_bg_sex.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/sel_btn_bg_accent_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/sel_btn_bg_accent_44.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/sel_btn_bg_accent_4_stroke.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/sel_btn_bg_black_alpha_44.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/sel_cb_circle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/sel_opt_done_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/drawable/status_empty.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/values-v21/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/values/attrs_base.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/values/attrs_empty_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/IPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/IUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/IView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/Presenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/values/ids.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/values/ids.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/5.4.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/5.4.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/5.4.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/build/classes/java/main/net/qiujuer/web/italker/push/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/build/classes/java/main/net/qiujuer/web/italker/push/bean/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/build/classes/java/main/net/qiujuer/web/italker/push/service/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/build/libs/iTalker-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/build/resources/main/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/src/main/java/net/qiujuer/web/italker/push/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/src/main/java/net/qiujuer/web/italker/push/bean/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/src/main/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iTalker/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/src/main/main.iml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="384" />
+    <option name="y" value="23" />
+    <option name="width" value="1296" />
+    <option name="height" value="1027" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="push" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="push" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="push" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.19" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.19" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : iTalker : server-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_server" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+        <option name="PRESERVE_SESSIONS" value="true" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51513" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : iTalker : server-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbd1eb2f-d2ae-44bd-9777-92eb0c33e934" name="Default Changelist" comment="" />
+      <created>1570193608660</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570193608660</updated>
+      <workItem from="1570193612599" duration="462000" />
+      <workItem from="1570194081333" duration="135000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="597000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="23" width="1626" height="1027" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20075758" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297062" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3297062" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.3297062" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Redis Servers" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.26-b03/bedcfdc4480e0bed601c9d918d8ddcd1e56a4546/jersey-server-2.26-b03-sources.jar!/org/glassfish/jersey/server/ResourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>test|server</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
