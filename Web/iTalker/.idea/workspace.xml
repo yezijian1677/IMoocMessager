@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78eb044b-1cc3-40bd-a3cd-36273ea936bb" name="Default Changelist" comment="" />
+    <list default="true" id="78eb044b-1cc3-40bd-a3cd-36273ea936bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/common/build.gradle" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -207,10 +214,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -403,12 +412,12 @@
       <updated>1570168138552</updated>
       <workItem from="1570168140222" duration="210000" />
       <workItem from="1570168365910" duration="179000" />
-      <workItem from="1570168624883" duration="3116000" />
+      <workItem from="1570168624883" duration="3774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3505000" />
+    <option name="totallyTimeSpent" value="4163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="23" width="1626" height="1027" extended-state="6" />
