@@ -16,15 +16,11 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-/**
- * @author qiujuer Email:qiujuer@live.cn
- * @version 1.0.0
- */
+
 @SuppressWarnings({"unchecked", "unused"})
 public abstract class RecyclerAdapter<Data>
         extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder<Data>>
-        implements View.OnClickListener, View.OnLongClickListener,
-        AdapterCallback<Data> {
+        implements View.OnClickListener, View.OnLongClickListener, AdapterCallback<Data> {
     private final List<Data> mDataList;
     private AdapterListener<Data> mListener;
 
@@ -185,6 +181,17 @@ public abstract class RecyclerAdapter<Data>
     }
 
     @Override
+    public void update(Data data, ViewHolder<Data> holder) {
+        int pos = holder.getAdapterPosition();
+        if (pos >= 0) {
+            mDataList.remove(pos);
+            mDataList.add(pos, data);
+            //通知坐标下的数据有更新
+            notifyItemChanged(pos);
+        }
+    }
+
+    @Override
     public void onClick(View v) {
         ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
         if (this.mListener != null) {
@@ -271,6 +278,24 @@ public abstract class RecyclerAdapter<Data>
             if (this.callback != null) {
                 this.callback.update(data, this);
             }
+        }
+    }
+
+
+    public static abstract class AdapterListenerImpl<Data> implements AdapterListener<Data>{
+        /**
+         * 对回调接口做实现
+         * @param holder
+         * @param data
+         */
+        @Override
+        public void onItemClick(ViewHolder holder, Data data) {
+
+        }
+
+        @Override
+        public void onItemLongClick(ViewHolder holder, Data data) {
+
         }
     }
 }
