@@ -7,13 +7,13 @@
     android:layout_margin="1dp"
     android:background="@color/white">
 
-    <ImageView
+    <net.qiujuer.genius.ui.widget.ImageView
         android:id="@+id/im_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/app_name"/>
 
-    <view
+    <View
         android:id="@+id/view_shade"
         tools:visibility="visible"
         android:visibility="gone"
@@ -21,7 +21,7 @@
         android:layout_height="match_parent"
         android:background="@color/black_alpha_112" />
 
-    <CheckBox
+    <net.qiujuer.genius.ui.widget.CheckBox
         android:id="@+id/cb_select"
         tools:visibility="visible"
         android:visibility="gone"
