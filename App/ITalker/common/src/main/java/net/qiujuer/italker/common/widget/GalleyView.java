@@ -13,6 +13,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -90,6 +91,9 @@ public class GalleyView extends RecyclerView {
             notifyRefresh = true;
         }else {
             if (mSelectedImages.size() >= MAX_IMAGE_COUNT) {
+                String str = getResources().getString(R.string.label_gallery_select_max_size);
+                str = String.format(str, MAX_IMAGE_COUNT);
+                Toast.makeText(getContext(), str, Toast.LENGTH_SHORT).show();
                 notifyRefresh = false;
             } else {
                 mSelectedImages.add(image);
