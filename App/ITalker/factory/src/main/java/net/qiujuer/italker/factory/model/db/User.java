@@ -1,14 +1,12 @@
 package net.qiujuer.italker.factory.model.db;
 
-import com.google.gson.annotations.Expose;
-
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class User {
 
     private String id;
     private String name;
-    private String phone;
+    private String account;
     private String portrait;
     private String description;
     private int sex;
@@ -16,7 +14,7 @@ public class User {
     //备注信息
     private String alias;
     //用户信息最后的更新时间
-    private LocalDateTime modifyAt;
+    private Date modifyAt;
     //用户关注人的数量
     private int follows;
     //用户粉丝数量
@@ -40,12 +38,12 @@ public class User {
         this.name = name;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getAccount() {
+        return account;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setAccount(String account) {
+        this.account = account;
     }
 
     public String getPortrait() {
@@ -80,11 +78,11 @@ public class User {
         this.alias = alias;
     }
 
-    public LocalDateTime getModifyAt() {
+    public Date getModifyAt() {
         return modifyAt;
     }
 
-    public void setModifyAt(LocalDateTime modifyAt) {
+    public void setModifyAt(Date modifyAt) {
         this.modifyAt = modifyAt;
     }
 

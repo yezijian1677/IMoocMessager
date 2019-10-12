@@ -1,29 +1,39 @@
 package net.qiujuer.italker.factory.model.api.account;
 
 public class RegisterModel {
-    private String phone;
+    private String account;
     private String name;
     private String password;
     private String pushId;
 
 
-    public RegisterModel(String phone, String password, String name) {
-        this(phone, name, password, null);
+    public RegisterModel(String account, String password, String name) {
+        this(account, password, name, null);
     }
 
-    public RegisterModel(String phone, String password, String name, String pushId) {
-        this.phone = phone;
+    public RegisterModel(String account, String password, String name, String pushId) {
+        this.account = account;
         this.name = name;
         this.password = password;
         this.pushId = pushId;
     }
 
-    public String getPhone() {
-        return phone;
+    @Override
+    public String toString() {
+        return "RegisterModel{" +
+                "account='" + account + '\'' +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", pushId='" + pushId + '\'' +
+                '}';
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public String getAccount() {
+        return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
     }
 
     public String getName() {
@@ -48,15 +58,5 @@ public class RegisterModel {
 
     public void setPushId(String pushId) {
         this.pushId = pushId;
-    }
-
-    @Override
-    public String toString() {
-        return "RegisterModel{" +
-                "phone='" + phone + '\'' +
-                ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", pushId='" + pushId + '\'' +
-                '}';
     }
 }

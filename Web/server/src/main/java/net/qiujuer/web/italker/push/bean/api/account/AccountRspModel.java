@@ -15,7 +15,7 @@ public class AccountRspModel {
     private UserCard user;
     //当前登陆账号
     @Expose
-    private String accout;
+    private String account;
     //登陆后获取token
     //通过token获取用户信息
     @Expose
@@ -30,7 +30,7 @@ public class AccountRspModel {
 
     public AccountRspModel(User user, boolean isBind) {
         this.user = new UserCard(user);
-        this.accout = user.getPhone();
+        this.account = user.getPhone();
         this.token = user.getToken();
         this.isBind = isBind;
     }
@@ -43,12 +43,12 @@ public class AccountRspModel {
         this.user = user;
     }
 
-    public String getAccout() {
-        return accout;
+    public String getAccount() {
+        return account;
     }
 
-    public void setAccout(String accout) {
-        this.accout = accout;
+    public void setAccount(String account) {
+        this.account = account;
     }
 
     public String getToken() {

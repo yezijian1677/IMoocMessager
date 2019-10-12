@@ -151,7 +151,10 @@ public class UserFactory {
         user.setPassword(password);
         //账户为手机
         user.setPhone(account);
-        return Hib.query(session -> (User)session.save(user));
+        return Hib.query(session -> {
+            session.save(user);
+            return user;
+        });
     }
 
     /**

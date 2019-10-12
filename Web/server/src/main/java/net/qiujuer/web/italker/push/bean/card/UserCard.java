@@ -1,6 +1,7 @@
 package net.qiujuer.web.italker.push.bean.card;
 
 import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 import net.qiujuer.web.italker.push.bean.db.User;
 import net.qiujuer.web.italker.push.utils.Hib;
 
@@ -16,6 +17,7 @@ public class UserCard {
     @Expose
     private String name;
     @Expose
+    @SerializedName("account")
     private String phone;
     @Expose
     private String portrait;

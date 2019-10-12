@@ -10,6 +10,14 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //个推相关参数
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "xtDkMSlZYM6TUQgXklpPY9",
+                GETUI_APP_KEY   : "KYGHTUTYGZ9DefdhW2Re52",
+                GETUI_APP_SECRET: "TLFsOk2PUe6XfHg4NjpCl4",
+                PACKAGE_NAME    : applicationId
+        ]
     }
     buildTypes {
         release {
@@ -42,6 +50,7 @@ dependencies {
     compile "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
 
+    compile "com.getui:sdk:$rootProject.ext.getuiVersion"
     compile "pub.devrel:easypermissions:$rootProject.ext.easyPMVersion"
     compile "com.yalantis:ucrop:$rootProject.ext.ucropVersion"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
