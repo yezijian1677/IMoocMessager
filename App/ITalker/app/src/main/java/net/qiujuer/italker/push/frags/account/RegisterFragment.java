@@ -14,7 +14,7 @@ import net.qiujuer.italker.push.frags.activities.MainActivity;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class RegitsterFragment extends PresenterFragment<RegisterContract.Presenter> implements RegisterContract.View {
+public class RegisterFragment extends PresenterFragment<RegisterContract.Presenter> implements RegisterContract.View {
     private AccountTrigger mAccountTrigger;
 
 
@@ -31,7 +31,7 @@ public class RegitsterFragment extends PresenterFragment<RegisterContract.Presen
     @BindView(R.id.btn_submit)
     Button mSubmit;
 
-    public RegitsterFragment() {
+    public RegisterFragment() {
         // Required empty public constructor
     }
 

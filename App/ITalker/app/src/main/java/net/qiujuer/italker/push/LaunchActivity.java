@@ -14,6 +14,7 @@ import net.qiujuer.genius.res.Resource;
 import net.qiujuer.genius.ui.compat.UiCompat;
 import net.qiujuer.italker.common.app.Activity;
 import net.qiujuer.italker.factory.persistence.Account;
+import net.qiujuer.italker.push.frags.activities.AccountActivity;
 import net.qiujuer.italker.push.frags.activities.MainActivity;
 import net.qiujuer.italker.push.frags.assist.PermissionFragment;
 
@@ -59,10 +60,19 @@ public class LaunchActivity extends Activity {
      * 等待对我们的pushId设好值
      */
     private void waitPushReceiverId() {
-        //如果拿到了pushId
-        if (!TextUtils.isEmpty(Account.getPushId())) {
-            skip();
-            return;
+
+        if (Account.isLogin()) {
+            //已经登陆绑定
+            if (Account.isBind()) {
+                skip();
+                return;
+            }
+        } else {
+            //如果拿到了pushId,没有登陆，不能绑定pushId
+            if (!TextUtils.isEmpty(Account.getPushId())) {
+                skip();
+                return;
+            }
         }
 
         getWindow().getDecorView().postDelayed(new Runnable() {
@@ -92,7 +102,11 @@ public class LaunchActivity extends Activity {
     private void reallySkip() {
         //权限检测，跳转
         if (PermissionFragment.haveAll(this, getSupportFragmentManager())) {
-            MainActivity.show(this);
+            if (Account.isLogin()) {
+                MainActivity.show(this);
+            } else {
+                AccountActivity.show(this);
+            }
             finish();
         }
     }

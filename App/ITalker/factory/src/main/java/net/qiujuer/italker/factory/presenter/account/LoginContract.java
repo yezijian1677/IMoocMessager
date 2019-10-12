@@ -6,14 +6,14 @@ import net.qiujuer.italker.common.factory.presenter.BaseContract;
 
 public class LoginContract {
 
-    interface View extends BaseContract.View<Presenter>{
+    public interface View extends BaseContract.View<Presenter>{
         //注册成功
         void loginSuccess();
 
     }
 
-    interface Presenter extends BaseContract.Presenter {
-        void login(String phone, String name, String password);
+    public interface Presenter extends BaseContract.Presenter {
+        void login(String phone, String password);
     }
 
 }

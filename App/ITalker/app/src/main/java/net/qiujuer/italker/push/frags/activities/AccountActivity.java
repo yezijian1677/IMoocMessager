@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.widget.ImageView;
 
@@ -19,7 +18,7 @@ import net.qiujuer.italker.common.app.Fragment;
 import net.qiujuer.italker.push.R;
 import net.qiujuer.italker.push.frags.account.AccountTrigger;
 import net.qiujuer.italker.push.frags.account.LoginFragment;
-import net.qiujuer.italker.push.frags.account.RegitsterFragment;
+import net.qiujuer.italker.push.frags.account.RegisterFragment;
 
 import butterknife.BindView;
 
@@ -75,7 +74,7 @@ public class AccountActivity extends Activity implements AccountTrigger {
         if (mCurFragment == mLoginFragment) {
             if (mRegisterFragment == null) {
                 //默认情况下，第一次
-                mRegisterFragment = new RegitsterFragment();
+                mRegisterFragment = new RegisterFragment();
             }
             fragment = mRegisterFragment;
         } else {

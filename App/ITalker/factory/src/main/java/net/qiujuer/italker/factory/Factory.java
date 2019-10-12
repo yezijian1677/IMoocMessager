@@ -8,6 +8,7 @@ import com.google.gson.GsonBuilder;
 import net.qiujuer.italker.common.app.Application;
 import net.qiujuer.italker.common.factory.data.DataSource;
 import net.qiujuer.italker.factory.model.api.RspModel;
+import net.qiujuer.italker.factory.persistence.Account;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
@@ -29,6 +30,11 @@ public class Factory {
                 //TODO 数据库过滤
                 //.setExclusionStrategies()
                 .create();
+    }
+
+    public static void setup() {
+        Account.load(app());
+
     }
 
     public static Factory getInstance() {
@@ -121,5 +127,13 @@ public class Factory {
      */
     private void logout() {
 
+    }
+
+    /**
+     * 处理推送来的消息
+     * @param message 消息
+     */
+    public static void dispatchPush(String message) {
+        //todo
     }
 }
