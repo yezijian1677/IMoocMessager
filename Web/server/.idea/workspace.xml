@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbd1eb2f-d2ae-44bd-9777-92eb0c33e934" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/data/helper/UserHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/model/card/UserCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/user/UpdateInfoContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/user/UserUpdateInfoPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/user/UpdateInfoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/user/UpdateInfoFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/net/RemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/net/RemoteService.java" afterDir="false" />
-    </list>
+    <list default="true" id="dbd1eb2f-d2ae-44bd-9777-92eb0c33e934" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -75,7 +68,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/card/UserCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
+            <state relative-caret-position="226">
               <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -449,7 +442,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46144000" />
+    <option name="totallyTimeSpent" value="46521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="23" width="1626" height="1027" extended-state="6" />
@@ -826,16 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -956,9 +939,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/card/UserCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
+        <state relative-caret-position="226">
           <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />

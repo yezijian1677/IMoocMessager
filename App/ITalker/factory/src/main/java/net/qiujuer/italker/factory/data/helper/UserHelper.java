@@ -6,6 +6,7 @@ import net.qiujuer.italker.factory.R;
 import net.qiujuer.italker.factory.model.api.RspModel;
 import net.qiujuer.italker.factory.model.api.User.UserUpdateModel;
 import net.qiujuer.italker.factory.model.card.UserCard;
+import net.qiujuer.italker.factory.model.db.User;
 import net.qiujuer.italker.factory.net.Network;
 import net.qiujuer.italker.factory.net.RemoteService;
 
@@ -32,8 +33,8 @@ public class UserHelper {
                 if (rspModel.success()) {
                     UserCard userCard = rspModel.getResult();
                     //数据库存储，需要吧userCard转换为user
-
-
+                    User user = userCard.userBuild();
+                    user.save();
                     callback.onDataLoaded(userCard);
                 } else {
                     //错误情况下的错误分配
