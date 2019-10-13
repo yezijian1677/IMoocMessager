@@ -4,11 +4,14 @@ import android.support.annotation.StringRes;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.raizlabs.android.dbflow.config.FlowConfig;
+import com.raizlabs.android.dbflow.config.FlowManager;
 
 import net.qiujuer.italker.common.app.Application;
 import net.qiujuer.italker.common.factory.data.DataSource;
 import net.qiujuer.italker.factory.model.api.RspModel;
 import net.qiujuer.italker.factory.persistence.Account;
+import net.qiujuer.italker.factory.utils.DBFlowExclusionStrategy;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
@@ -28,11 +31,16 @@ public class Factory {
         gson = new GsonBuilder()
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS")
                 //TODO 数据库过滤
-                //.setExclusionStrategies()
+                .setExclusionStrategies(new DBFlowExclusionStrategy())
                 .create();
     }
 
+    /**
+     * factory初始化
+     */
     public static void setup() {
+        //数据初始化的时候就打开数据库
+        FlowManager.init(new FlowConfig.Builder(app()).openDatabasesOnInit(true).build());
         Account.load(app());
 
     }

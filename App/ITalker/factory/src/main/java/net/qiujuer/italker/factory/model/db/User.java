@@ -1,25 +1,45 @@
 package net.qiujuer.italker.factory.model.db;
 
+import com.raizlabs.android.dbflow.annotation.Column;
+import com.raizlabs.android.dbflow.annotation.PrimaryKey;
+import com.raizlabs.android.dbflow.annotation.Table;
+import com.raizlabs.android.dbflow.structure.BaseModel;
+
 import java.util.Date;
 
-public class User {
+@Table(database = AppDatabase.class)
+public class User extends BaseModel {
 
+    public static final int SEX_MAN = 1;
+    public static final int SEX_WOMEN = 2;
+
+    @PrimaryKey
     private String id;
+    @Column
     private String name;
+    @Column
     private String account;
+    @Column
     private String portrait;
+    @Column
     private String description;
+    @Column
     private int sex;
 
     //备注信息
+    @Column
     private String alias;
     //用户信息最后的更新时间
+    @Column
     private Date modifyAt;
     //用户关注人的数量
+    @Column
     private int follows;
     //用户粉丝数量
+    @Column
     private int following;
     //我与当前用户的关注状态
+    @Column
     private boolean isFollow;
 
     public String getId() {

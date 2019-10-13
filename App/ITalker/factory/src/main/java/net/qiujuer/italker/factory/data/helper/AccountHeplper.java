@@ -37,11 +37,13 @@ public class AccountHeplper {
                 RspModel<AccountRspModel> rspModel = response.body();
                 if (rspModel.success()) {
                     //拿到实体
+                    //进行数据库写入和缓存绑定
                     AccountRspModel accountRspModel = rspModel.getResult();
+                    User user = accountRspModel.getUser();
+                    user.save();
+                    Account.login(accountRspModel);
                     //是否绑定设备
                     if (accountRspModel.isBind()) {
-                        User user = accountRspModel.getUser();
-                        //进行数据库写入和缓存绑定
                         //然后返回
                         callback.onDataLoaded(user);
                     } else {
