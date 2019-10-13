@@ -8,9 +8,10 @@ import net.qiujuer.italker.common.Common;
 import net.qiujuer.italker.common.factory.data.DataSource;
 import net.qiujuer.italker.common.factory.presenter.BasePresenter;
 import net.qiujuer.italker.factory.R;
-import net.qiujuer.italker.factory.data.helper.AccountHeplper;
+import net.qiujuer.italker.factory.data.helper.AccountHelper;
 import net.qiujuer.italker.factory.model.api.account.RegisterModel;
 import net.qiujuer.italker.factory.model.db.User;
+import net.qiujuer.italker.factory.persistence.Account;
 
 import java.util.regex.Pattern;
 
@@ -39,9 +40,9 @@ public class RegisterPresenter extends BasePresenter<RegisterContract.View>
             view.showError(R.string.data_account_register_invalid_parameter_password);
         } else {
             //成功的请求
-            RegisterModel model = new RegisterModel(phone, password, name);
+            RegisterModel model = new RegisterModel(phone, password, name, Account.getPushId());
             //进行网络请求，并设置回送接口为自己
-            AccountHeplper.register(model, this);
+            AccountHelper.register(model, this);
         }
 
     }

@@ -9,7 +9,7 @@ import android.util.Log;
 import com.igexin.sdk.PushConsts;
 
 import net.qiujuer.italker.factory.Factory;
-import net.qiujuer.italker.factory.data.helper.AccountHeplper;
+import net.qiujuer.italker.factory.data.helper.AccountHelper;
 import net.qiujuer.italker.factory.persistence.Account;
 
 /**
@@ -54,7 +54,7 @@ public class MessageReceiver extends BroadcastReceiver {
         Account.setPushId(cid);
         if (Account.isLogin()) {
             //账户登陆状态，进行一次绑定
-            AccountHeplper.bindPush(null);
+            AccountHelper.bindPush(null);
         }
     }
 
