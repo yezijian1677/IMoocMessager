@@ -10,7 +10,6 @@ import net.qiujuer.italker.factory.R;
 import net.qiujuer.italker.factory.data.helper.AccountHelper;
 import net.qiujuer.italker.factory.model.api.account.LoginModel;
 import net.qiujuer.italker.factory.model.db.User;
-import net.qiujuer.italker.factory.persistence.Account;
 
 public class LoginPresenter extends BasePresenter<LoginContract.View> implements LoginContract.Presenter, DataSource.Callback<User> {
 
@@ -25,7 +24,7 @@ public class LoginPresenter extends BasePresenter<LoginContract.View> implements
         if (TextUtils.isEmpty(phone) || TextUtils.isEmpty(password)) {
             view.showError(R.string.data_account_login_invalid_parameter);
         } else {
-            LoginModel model = new LoginModel(phone, password, Account.getPushId());
+            LoginModel model = new LoginModel(phone, password);
             AccountHelper.login(model, this);
         }
     }
