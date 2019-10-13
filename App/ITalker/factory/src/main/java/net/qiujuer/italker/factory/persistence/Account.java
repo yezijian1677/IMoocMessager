@@ -75,10 +75,18 @@ public class Account {
 
     /**
      * 用户信息是否完善
+     *
      * @return
      */
     public static boolean isComplete() {
-        return isLogin();
+        //首先保证登录成功
+        if (isLogin()) {
+            User self = getUser();
+            return TextUtils.isEmpty(self.getDescription())
+                    && TextUtils.isEmpty(self.getPortrait())
+                    && self.getSex() != 0;
+        }
+        return false;
     }
 
     public static boolean isBind() {

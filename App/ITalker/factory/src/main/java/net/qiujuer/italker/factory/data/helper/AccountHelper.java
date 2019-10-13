@@ -84,8 +84,10 @@ public class AccountHelper {
                 Account.login(accountRspModel);
                 //是否绑定设备
                 if (accountRspModel.isBind()) {
+                    //设定绑定状态
+                    Account.setBind(true);
                     //然后返回
-                    if (callback!=null)
+                    if (callback != null)
                         callback.onDataLoaded(user);
                 } else {
                     bindPush(callback);

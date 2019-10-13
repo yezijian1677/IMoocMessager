@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbd1eb2f-d2ae-44bd-9777-92eb0c33e934" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/data/helper/AccountHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/model/api/account/LoginModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/MessageReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/MessageReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/data/helper/AccountHeplper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/net/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/net/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/net/RemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/net/RemoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/account/LoginPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/account/LoginPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/account/RegisterPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/account/RegisterPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/model/api/User/UserUpdateModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/activities/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/activities/UserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/activities/UserActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/layout/activity_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/layout/activity_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/data/helper/AccountHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/data/helper/AccountHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/persistence/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/persistence/Account.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -451,10 +449,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45798000" />
+    <option name="totallyTimeSpent" value="45936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="23" width="1626" height="1027" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2215909" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
