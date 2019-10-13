@@ -82,8 +82,8 @@ public class Account {
         //首先保证登录成功
         if (isLogin()) {
             User self = getUser();
-            return TextUtils.isEmpty(self.getDescription())
-                    && TextUtils.isEmpty(self.getPortrait())
+            return !TextUtils.isEmpty(self.getDescription())
+                    && !TextUtils.isEmpty(self.getPortrait())
                     && self.getSex() != 0;
         }
         return false;
