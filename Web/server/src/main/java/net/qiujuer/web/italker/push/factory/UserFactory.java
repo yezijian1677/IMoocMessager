@@ -5,7 +5,6 @@ import net.qiujuer.web.italker.push.bean.db.User;
 import net.qiujuer.web.italker.push.bean.db.UserFollow;
 import net.qiujuer.web.italker.push.utils.Hib;
 import net.qiujuer.web.italker.push.utils.TextUtil;
-import org.hibernate.Session;
 
 import java.util.List;
 import java.util.Set;
@@ -17,45 +16,48 @@ import java.util.stream.Collectors;
  */
 public class UserFactory {
 
-    public static void main(String[] args) {
-        User user = login("1234567", "111111");
-        System.out.println(user.getCreateAt());
-    }
-
     //只能查询自己的
     public static User findByToken(String token) {
-        return Hib.query(session -> (User)session
+        return Hib.query(session -> (User) session
                 .createQuery("from User where token=:token")
                 .setParameter("token", token)
                 .uniqueResult());
     }
+
     /**
      * 根据手机查找
+     *
      * @param phone
      * @return
      */
     public static User findByPhone(String phone) {
-        return Hib.query(session -> (User)session
-                    .createQuery("from User where phone=:phone")
-                    .setParameter("phone", phone)
-                    .uniqueResult());
-    }
-
-    /**
-     * 名字查找
-     * @param name name
-     * @return User
-     */
-    public static User findByName(String name) {
-        return Hib.query(session -> (User)session
-                .createQuery("from User where name=:name")
-                .setParameter("name", name)
+        return Hib.query(session -> (User) session
+                .createQuery("from User where phone=:phone")
+                .setParameter("phone", phone)
                 .uniqueResult());
     }
 
     /**
+     * 名字查找
+     *
+     * @param name name
+     * @return User
+     */
+    public static User findByName(String name) {
+        return Hib.query(session -> (User) session
+                .createQuery("from User where name=:name")
+                .setParameter("name", name)
+                .uniqueResult());
+    }
+    //通过id查询用户信息
+    public static User findById(String id) {
+        return Hib.query(session -> session.get(User.class, id));
+    }
+
+    /**
      * 给当前账户绑定pushId
-     * @param user 当前user
+     *
+     * @param user   当前user
      * @param pushId 自己设备的id
      * @return user
      */
@@ -109,9 +111,10 @@ public class UserFactory {
 
     /**
      * 用户注册
-     * @param account 账户
+     *
+     * @param account  账户
      * @param password 密码
-     * @param name 用户名
+     * @param name     用户名
      * @return user
      */
     public static User register(String account, String password, String name) {
@@ -140,12 +143,13 @@ public class UserFactory {
 
     /**
      * 创建一个用户
-     * @param account 账号
+     *
+     * @param account  账号
      * @param password 密码
-     * @param name 名字
+     * @param name     名字
      * @return user
      */
-    private static User createUser(String account, String password, String name){
+    private static User createUser(String account, String password, String name) {
         User user = new User();
         user.setName(name);
         user.setPassword(password);
@@ -159,6 +163,7 @@ public class UserFactory {
 
     /**
      * 加密后的密码
+     *
      * @param password 加密
      * @return 返回加密的密码
      */
@@ -172,6 +177,7 @@ public class UserFactory {
 
     /**
      * 更新用户信息
+     *
      * @param user user
      * @return user
      */
@@ -180,5 +186,92 @@ public class UserFactory {
             session.saveOrUpdate(user);
             return user;
         });
+    }
+
+    public static List<User> contact(User self) {
+
+        return Hib.query(session -> {
+            session.load(self, self.getId());
+//            获取我关注的人
+            Set<UserFollow> flows = self.getFollowing();
+            return flows.stream()
+                    .map(UserFollow::getTarget)
+                    .collect(Collectors.toList());
+        });
+    }
+
+    /**
+     * 关注人的操作
+     * @param origin 发起者
+     * @param target 目标
+     * @param alias 别名
+     * @return 被关注人的信息
+     */
+    public static User follow(final User origin, final User target, final String alias) {
+        UserFollow follow = getUserFollow(origin, target);
+        if (follow != null) {
+            return follow.getTarget();//已关注直接返回
+        }
+
+        return Hib.query(session -> {
+            //操作懒加载的数据，需要重新加载一次
+            session.load(origin, origin.getId());
+            session.load(target, target.getId());
+            //我关注人的时候，同时也需要关注我，所以需要添加两条数据
+            UserFollow originFollow = new UserFollow();
+            originFollow.setOrigin(origin);
+            originFollow.setTarget(target);
+            originFollow.setAlisa(alias);
+
+            //被我关注的人也需要关注我
+            UserFollow targetFollow = new UserFollow();
+            targetFollow.setOrigin(target);
+            targetFollow.setTarget(origin);
+
+            session.save(originFollow);
+            session.save(targetFollow);
+
+            return target;
+        });
+    }
+
+    /**
+     * 查询两人是否关注
+     * @param origin 发起人
+     * @param target 被关注人
+     * @return 返回中间类
+     */
+    public static UserFollow getUserFollow(final User origin, final User target) {
+        return Hib.query(session -> {
+            return (UserFollow) session.createQuery("from UserFollow where originId=:originId and targetId=:targetId")
+                    .setParameter("originId", origin.getId())
+                    .setParameter("targetId", target.getId())
+                    .setMaxResults(1)
+                    .uniqueResult();//查询一条数据
+        });
+    }
+
+    /**
+     * 搜索联系人的实现
+     * @param name 查询的联系人的名字 允许为空
+     * @return 用户列表
+     */
+    @SuppressWarnings("unchecked")
+    public static List<User> search(String name) {
+        if (Strings.isNullOrEmpty(name)) {
+            name = "";
+        }
+        final String searchName = "%" + name + "%";
+        return Hib.query(session -> {
+            //模糊查询，忽略大小写，头像和简介需要完善
+            return  (List<User>) session.createQuery("from User where lower(name) like :name and portrait is not null and description is not null ")
+                    .setParameter("name", "%" + searchName)
+                    .setMaxResults(20)
+                    .list();
+        });
+    }
+
+    public static void main(String[] args) {
+
     }
 }
