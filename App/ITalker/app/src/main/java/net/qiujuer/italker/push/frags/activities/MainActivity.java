@@ -110,11 +110,23 @@ public class MainActivity extends Activity implements BottomNavigationView.OnNav
     }
 
     @OnClick(R.id.im_search)
-    void onSearchMenuClick(){}
+    void onSearchMenuClick(){
+        //在群界面的时候，点击搜索进入群搜索界面
+        int type = Objects.equals(mNavHelper.getCurrentTab().extra, R.string.title_group) ? SearchActivity.TYPE_GROUP : SearchActivity.TYPE_UESER;
+        SearchActivity.show(this, type);
+    }
 
     @OnClick(R.id.btn_action)
     void onActionClick(){
-        AccountActivity.show(this);
+        //浮动点击。判断是群还是联系人界面
+        //如果是群则打开群创建的界面
+        //其他，添加用户
+        if (Objects.equals(mNavHelper.getCurrentTab().extra, R.string.title_group)) {
+            //todo 打开群创建
+        } else {
+            SearchActivity.show(this, SearchActivity.TYPE_UESER);
+        }
+
     }
 
     @Override
