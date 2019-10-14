@@ -38,6 +38,7 @@ public class SearchActivity extends ToolbarActivity {
         return type == TYPE_UESER || type == TYPE_GROUP;
     }
 
+
     @Override
     protected void initWidget() {
         super.initWidget();
@@ -53,6 +54,7 @@ public class SearchActivity extends ToolbarActivity {
             mSearchFragment = searchGroupFragment;
         }
 
+        //往容器中添加这个fragment
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.lay_container, fragment).commit();
     }

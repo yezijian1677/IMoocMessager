@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
-    android:foreground="@drawable/ic_touch_menu"
+    android:foreground="@drawable/ic_touch_fg"
     android:layout_marginTop="@dimen/len_2"
     android:layout_marginBottom="@dimen/len_2"
     android:background="@color/white"

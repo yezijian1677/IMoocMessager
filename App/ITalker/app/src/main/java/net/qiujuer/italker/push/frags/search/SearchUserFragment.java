@@ -67,6 +67,13 @@ public class SearchUserFragment extends PresenterFragment<SearchContract.Present
         setPlaceHolderView(mEmptyView);
     }
 
+    @Override
+    protected void initData() {
+        super.initData();
+        //发起首次搜索
+        search("");
+    }
+
     /**
      * 查找数据
      * @param content 关键字
@@ -113,7 +120,7 @@ public class SearchUserFragment extends PresenterFragment<SearchContract.Present
                     .centerCrop()
                     .into(mPortrait);
             mName.setText(userCard.getName());
-            mFollow.setEnabled(userCard.isFollow());
+            mFollow.setEnabled(!userCard.isFollow());
         }
     }
 }
