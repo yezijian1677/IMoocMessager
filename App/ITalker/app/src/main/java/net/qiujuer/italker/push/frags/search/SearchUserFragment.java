@@ -50,7 +50,7 @@ public class SearchUserFragment extends PresenterFragment<SearchContract.Present
     protected void initWidget(View root) {
         super.initWidget(root);
         mRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
-        mRecycler.setAdapter(new RecyclerAdapter<UserCard>() {
+        mRecycler.setAdapter(mAdapter = new RecyclerAdapter<UserCard>() {
             @Override
             protected int getItemViewType(int position, UserCard userCard) {
                 //返回cell布局id
@@ -67,9 +67,13 @@ public class SearchUserFragment extends PresenterFragment<SearchContract.Present
         setPlaceHolderView(mEmptyView);
     }
 
+    /**
+     * 查找数据
+     * @param content 关键字
+     */
     @Override
     public void search(String content) {
-
+        mPresenter.search(content);
     }
 
     @Override

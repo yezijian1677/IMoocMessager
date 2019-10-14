@@ -52,6 +52,9 @@ public class SearchActivity extends ToolbarActivity {
             fragment = searchGroupFragment;
             mSearchFragment = searchGroupFragment;
         }
+
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.lay_container, fragment).commit();
     }
 
     @Override
