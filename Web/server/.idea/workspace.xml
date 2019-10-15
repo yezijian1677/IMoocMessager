@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbd1eb2f-d2ae-44bd-9777-92eb0c33e934" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/activities/MessageActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/layout/activity_message.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/layout/cell_contact_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/java/net/qiujuer/italker/common/factory/model/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/contact/ContactContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/contact/ContactPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/contact/FollowContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/contact/FollowPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/main/ContactFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/main/ContactFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/search/SearchUserFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/java/net/qiujuer/italker/push/frags/search/SearchUserFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/layout/fragment_contact.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/app/src/main/res/layout/fragment_contact.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/common/src/main/java/net/qiujuer/italker/common/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/java/net/qiujuer/italker/common/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/common/src/main/java/net/qiujuer/italker/common/factory/presenter/BaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/java/net/qiujuer/italker/common/factory/presenter/BaseContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/common/src/main/java/net/qiujuer/italker/common/widget/PortraitView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/common/src/main/java/net/qiujuer/italker/common/widget/PortraitView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/data/helper/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/data/helper/UserHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/model/card/UserCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/model/card/UserCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/model/db/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/model/db/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/net/RemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/net/RemoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/search/SearchUserPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../App/ITalker/factory/src/main/java/net/qiujuer/italker/factory/presenter/search/SearchUserPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -60,7 +82,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
+            <state relative-caret-position="2530">
               <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,19 +94,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/factory/UserFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
-              <caret line="248" column="36" selection-start-line="248" selection-start-column="36" selection-end-line="248" selection-end-column="36" />
+            <state relative-caret-position="293">
+              <caret line="259" column="50" selection-start-line="259" selection-start-column="50" selection-end-line="259" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#0#28#1" expanded="true" />
                 <element signature="e#0#28#1" expanded="true" />
                 <element signature="e#0#26#1" expanded="true" />
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1582#1583#0" expanded="true" />
                 <element signature="e#0#53#1" expanded="true" />
                 <element signature="e#0#51#1" expanded="true" />
                 <element signature="e#0#63#1" expanded="true" />
-                <element signature="e#7235#7265#0" expanded="true" />
                 <element signature="e#0#91#0" expanded="true" />
               </folding>
             </state>
@@ -367,17 +386,21 @@
       <workItem from="1570808918736" duration="311000" />
       <workItem from="1570840566510" duration="2703000" />
       <workItem from="1571030373710" duration="579000" />
-      <workItem from="1571031036900" duration="7761000" />
+      <workItem from="1571031036900" duration="7945000" />
+      <workItem from="1571126345427" duration="736000" />
+      <workItem from="1571138426391" duration="20000" />
+      <workItem from="1571143959029" duration="540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55207000" />
+    <option name="totallyTimeSpent" value="56687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="23" width="1626" height="1027" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22664142" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23421717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -388,7 +411,7 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40914038" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40914038" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49075082" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -872,7 +895,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
+        <state relative-caret-position="2530">
           <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -882,19 +905,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/factory/UserFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="248" column="36" selection-start-line="248" selection-start-column="36" selection-end-line="248" selection-end-column="36" />
+        <state relative-caret-position="293">
+          <caret line="259" column="50" selection-start-line="259" selection-start-column="50" selection-end-line="259" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#0#28#1" expanded="true" />
             <element signature="e#0#28#1" expanded="true" />
             <element signature="e#0#26#1" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
             <element signature="e#0#53#1" expanded="true" />
             <element signature="e#0#51#1" expanded="true" />
             <element signature="e#0#63#1" expanded="true" />
-            <element signature="e#7235#7265#0" expanded="true" />
             <element signature="e#0#91#0" expanded="true" />
           </folding>
         </state>

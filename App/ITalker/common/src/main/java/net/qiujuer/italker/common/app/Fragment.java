@@ -21,6 +21,7 @@ public abstract class Fragment extends android.support.v4.app.Fragment {
     protected View mRoot;
     protected Unbinder mRootUnBinder;
     protected PlaceHolderView mPlaceHolderView;
+    protected boolean mIsFirstInitData;
 
     @Override
     public void onAttach(Context context) {

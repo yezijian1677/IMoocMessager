@@ -9,11 +9,17 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import net.qiujuer.genius.ui.Ui;
+import net.qiujuer.genius.ui.compat.UiCompat;
+import net.qiujuer.genius.ui.drawable.LoadingCircleDrawable;
+import net.qiujuer.genius.ui.drawable.LoadingDrawable;
 import net.qiujuer.italker.common.app.PresenterFragment;
 import net.qiujuer.italker.common.widget.EmptyView;
 import net.qiujuer.italker.common.widget.PortraitView;
 import net.qiujuer.italker.common.widget.recycler.RecyclerAdapter;
 import net.qiujuer.italker.factory.model.card.UserCard;
+import net.qiujuer.italker.factory.presenter.contact.FollowContract;
+import net.qiujuer.italker.factory.presenter.contact.FollowPresenter;
 import net.qiujuer.italker.factory.presenter.search.SearchContract;
 import net.qiujuer.italker.factory.presenter.search.SearchUserPresenter;
 import net.qiujuer.italker.push.R;
@@ -22,6 +28,7 @@ import net.qiujuer.italker.push.frags.activities.SearchActivity;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 /**
  * 搜索人的实现
@@ -76,6 +83,7 @@ public class SearchUserFragment extends PresenterFragment<SearchContract.Present
 
     /**
      * 查找数据
+     *
      * @param content 关键字
      */
     @Override
@@ -97,7 +105,7 @@ public class SearchUserFragment extends PresenterFragment<SearchContract.Present
         return new SearchUserPresenter(this);
     }
 
-    class ViewHolder extends RecyclerAdapter.ViewHolder<UserCard>{
+    class ViewHolder extends RecyclerAdapter.ViewHolder<UserCard> implements FollowContract.View {
 
         @BindView(R.id.im_portrait)
         PortraitView mPortrait;
@@ -108,19 +116,63 @@ public class SearchUserFragment extends PresenterFragment<SearchContract.Present
         @BindView(R.id.im_follow)
         ImageView mFollow;
 
+        private FollowContract.Presenter mPresenter;
+
         public ViewHolder(View itemView) {
             super(itemView);
+            //当前view
+            new FollowPresenter(this);
         }
 
         @Override
         protected void onBind(UserCard userCard) {
             //头像加载
-            Glide.with(SearchUserFragment.this)
-                    .load(userCard.getPortrait())
-                    .centerCrop()
-                    .into(mPortrait);
+            mPortrait.setup( Glide.with(SearchUserFragment.this), userCard);
             mName.setText(userCard.getName());
             mFollow.setEnabled(!userCard.isFollow());
+        }
+
+        @OnClick(R.id.im_follow)
+        void onFollowClick() {
+            //发起关注
+            mPresenter.follow(mData.getId());
+        }
+
+        @Override
+        public void onFollowSucceed(UserCard userCard) {
+            if (mFollow.getDrawable() instanceof LoadingDrawable) {
+                ((LoadingDrawable) mFollow.getDrawable()).stop();
+                //设置为默认的drawable
+                mFollow.setImageResource(R.drawable.sel_opt_done_add);
+            }
+            //发起更新
+            updateData(userCard);
+        }
+
+        @Override
+        public void showError(int str) {
+            if (mFollow.getDrawable() instanceof LoadingDrawable) {
+                LoadingDrawable drawable = ((LoadingDrawable) mFollow.getDrawable());
+                drawable.setProgress(1);
+                drawable.stop();
+            }
+        }
+
+        @Override
+        public void showLoading() {
+            int minSize = (int) Ui.dipToPx(getResources(), 22);
+            int maxsize = (int) Ui.dipToPx(getResources(), 30);
+            //初始化一个圆形的动画的drawable
+            LoadingDrawable drawable = new LoadingCircleDrawable(minSize, maxsize);
+            drawable.setBackgroundColor(0);
+            drawable.setForegroundColor(new int[]{UiCompat.getColor(getResources(), R.color.white_alpha_208)});
+            mFollow.setImageDrawable(drawable);
+            drawable.start();
+        }
+
+        @Override
+        public void setPresenter(FollowContract.Presenter presenter) {
+            mPresenter = presenter;
         }
     }
 }
